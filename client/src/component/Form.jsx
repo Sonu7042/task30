@@ -16,7 +16,7 @@ const Form = () => {
     }
 
 
-    const response= await axios.post("http://localhost:9000/create",  data);
+    const response= await axios.post("https://task30-chi.vercel.app/create",  data);
     setCreateUser([ ...createUser, response.data.data]);
 
 
